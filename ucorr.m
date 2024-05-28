@@ -50,7 +50,7 @@ for linek = 1:length(lines),
         if (mod(data(1),1) == 0) ratiok = data(2); %if it is an integer, the file includes the number of sample column
           else ratiok = data(1);
         end;
-        countgoodlines++;
+        countgoodlines=countgoodlines+1;
         ratio(countgoodlines) = ratiok;
       end;
    end;   
